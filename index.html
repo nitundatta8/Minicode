@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <!-- <canvas id="canvas"></canvas> -->
+  <label for="num">Enter your coins</label>
+  <input type="number" id="dice">
+  <button type="submit" onclick="createDice()">Click</button>
+  <div id="output"></div>
+  <div>
+    <canvas id="canvas"></canvas>
+  </div>
+
+
+  <!-- <script>
+    function createDice() {
+      let x = document.getElementById("dice").value;
+      console.log(" create Dice " + typeof x);
+      // window.addEventListener("load", () => {
+
+      const canvas = document.querySelector("#canvas");
+      const ctx = canvas.getContext("2d");
+      canvas.height = 1000;
+      canvas.width = 1000;
+      if (x === "1") {
+        ctx.strokeRect(20, 20, 150, 100);
+        console.log(" row 1 ");
+      }
+      else if (x === "2") {
+        ctx.strokeRect(20, 20, 150, 100);
+        ctx.strokeRect(20, 120, 150, 100);
+        ctx.strokeRect(170, 120, 150, 100);
+        console.log(" row 2 ");
+      }
+
+      else if (x === "3") {
+        ctx.strokeRect(20, 20, 150, 100);
+        ctx.strokeRect(20, 120, 150, 100);
+        ctx.strokeRect(170, 120, 150, 100);
+        ctx.strokeRect(20, 220, 150, 100);
+        ctx.strokeRect(170, 220, 150, 100);
+        ctx.strokeRect(320, 220, 150, 100);
+        console.log(" row 3 ");
+      }
+
+      else if (x === "4") {
+        ctx.strokeRect(20, 20, 150, 100);
+        ctx.strokeRect(20, 120, 150, 100);
+        ctx.strokeRect(170, 120, 150, 100);
+        ctx.strokeRect(20, 220, 150, 100);
+        ctx.strokeRect(170, 220, 150, 100);
+        ctx.strokeRect(320, 220, 150, 100);
+        ctx.strokeRect(20, 320, 150, 100);
+        ctx.strokeRect(170, 320, 150, 100);
+        ctx.strokeRect(320, 320, 150, 100);
+        ctx.strokeRect(470, 320, 150, 100);
+      }
+      else if (x === "5") {
+        ctx.strokeRect(20, 20, 150, 100);
+        ctx.strokeRect(20, 120, 150, 100);
+        ctx.strokeRect(170, 120, 150, 100);
+        ctx.strokeRect(20, 220, 150, 100);
+        ctx.strokeRect(170, 220, 150, 100);
+        ctx.strokeRect(320, 220, 150, 100);
+        ctx.strokeRect(20, 320, 150, 100);
+        ctx.strokeRect(170, 320, 150, 100);
+        ctx.strokeRect(320, 320, 150, 100);
+        ctx.strokeRect(470, 320, 150, 100);
+        ctx.strokeRect(20, 420, 150, 100);
+        ctx.strokeRect(170, 420, 150, 100);
+        ctx.strokeRect(320, 420, 150, 100);
+        ctx.strokeRect(470, 420, 150, 100);
+        ctx.strokeRect(620, 420, 150, 100);
+
+      }
+
+
+
+
+    }
+  </script> -->
+  <script src="diceStairs.js"></script>
+</body>
+
+</html>
